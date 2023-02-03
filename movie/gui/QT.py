@@ -13,7 +13,7 @@ class Window(QWidget):
         self.button = QPushButton("Get json response from the server")
         self.button.clicked.connect(self.get_data)
         self.layout.addWidget(self.button, 0, 0)
-        self.line_edit_url = QLineEdit("http://127.0.0.1:8000/movie/all/1")
+        self.line_edit_url = QLineEdit("http://192.168.0.103:8000/movie/all/1")
         self.layout.addWidget(self.line_edit_url, 1, 0)
 
     def get_data(self):
